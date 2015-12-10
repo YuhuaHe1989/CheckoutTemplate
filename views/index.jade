@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+    form(action='', method='POST')
+      script.stripe-button(src='https://checkout.stripe.com/checkout.js', data-key='pk_test_si6a8GCBJvQkiMo6Msg0DLbn', data-amount='2000', data-name='Demo Site', data-description='2 widgets ($20.00)', data-image='http://figures.boundless.com/15158/full/make-payment.jpeg', data-locale='auto')
+
+
